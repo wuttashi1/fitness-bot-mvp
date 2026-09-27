@@ -1,0 +1,14 @@
+# Allowlist: credentials, databases, backups and tests never enter the build context.
+*
+!Dockerfile
+!requirements.lock
+!pyproject.toml
+!fitness_bot/
+!fitness_bot/**
+!scripts/
+!scripts/backup.py
+**/__pycache__/
+**/*.pyc
+**/.env
+**/*.sqlite3*
+

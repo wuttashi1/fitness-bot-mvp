@@ -1,0 +1,31 @@
+name: fitness-bot
+services:
+  bot:
+    image: fitness-telegram-bot:0.2.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fitness-bot
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 30s
+    env_file:
+      - .env
+    environment:
+      DATABASE_PATH: /data/fitness.sqlite3
+    volumes:
+      - /DATA/AppData/fitness-bot/data:/data
+      - /DATA/AppData/fitness-bot/backups:/backups
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+

@@ -1,0 +1,38 @@
+# Custom CasaOS import, not an App Store package.
+# Build the image on this server first. Do not start both compose files.
+name: fitness-bot
+services:
+  bot:
+    image: fitness-telegram-bot:0.2.0
+    pull_policy: never
+    container_name: fitness-bot
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 30s
+    environment:
+      DATABASE_PATH: /data/fitness.sqlite3
+    volumes:
+      - /DATA/AppData/fitness-bot/.env:/app/.env:ro
+      - /DATA/AppData/fitness-bot/data:/data
+      - /DATA/AppData/fitness-bot/backups:/backups
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+x-casaos:
+  main: bot
+  title:
+    en_US: Fitness Bot
+    ru_RU: Бот тренировок
+  description:
+    en_US: Telegram workout tracker. Open the bot in Telegram; there is no web interface.
+    ru_RU: Трекер тренировок в Telegram. Веб-интерфейса нет — откройте бота в Telegram.
+  category: Others

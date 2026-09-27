@@ -1,0 +1,884 @@
+{
+  "version": 1,
+  "name": "Программа тренировок",
+  "author": "configured_owner",
+  "source": {
+    "file": "Программа тренировок.xlsx",
+    "sheet": "Аркуш1",
+    "sha256": "34f72407a131ce830216090c26d4caad6bc0e9b44f40450a8ec26ef324a896cd"
+  },
+  "assumptions": [
+    "Four set slots inferred from B:I; empty cells remain null.",
+    "Muscle groups, 90-second rest, 8–12 range and 2.5 kg step are app defaults, not Excel facts.",
+    "Weight basis (per dumbbell/total/additional) is unspecified. Preserve the recorded number.",
+    "Progression is opt-in per exercise; no automatic change to recorded weights."
+  ],
+  "days": [
+    {
+      "name": "Тренировка 1",
+      "exercises": [
+        {
+          "name": "Жим лёжа гантелей под углом 30 градусов",
+          "group": "chest",
+          "name_cell": "A4",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "weight_cell": "B4",
+              "reps_cell": "C4"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D4",
+              "reps_cell": "E4"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F4",
+              "reps_cell": "G4"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H4",
+              "reps_cell": "I4"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Подтягивания с весом",
+          "group": "back",
+          "name_cell": "A5",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B5",
+              "reps_cell": "C5"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D5",
+              "reps_cell": "E5"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F5",
+              "reps_cell": "G5"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H5",
+              "reps_cell": "I5"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Верхняя тяга хват параллельный",
+          "group": "back",
+          "name_cell": "A6",
+          "sets": [
+            {
+              "weight": 40.0,
+              "reps": 10,
+              "weight_cell": "B6",
+              "reps_cell": "C6"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D6",
+              "reps_cell": "E6"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F6",
+              "reps_cell": "G6"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H6",
+              "reps_cell": "I6"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Махи гантелей в стороны",
+          "group": "shoulders",
+          "name_cell": "A7",
+          "sets": [
+            {
+              "weight": 8.0,
+              "reps": 10,
+              "weight_cell": "B7",
+              "reps_cell": "C7"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D7",
+              "reps_cell": "E7"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F7",
+              "reps_cell": "G7"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H7",
+              "reps_cell": "I7"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Сгибание на бицепс в кроссовере",
+          "group": "arms",
+          "name_cell": "A8",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "weight_cell": "B8",
+              "reps_cell": "C8"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D8",
+              "reps_cell": "E8"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F8",
+              "reps_cell": "G8"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H8",
+              "reps_cell": "I8"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Разгибание рук в верхнем блоке",
+          "group": "arms",
+          "name_cell": "A9",
+          "sets": [
+            {
+              "weight": 30.0,
+              "reps": 10,
+              "weight_cell": "B9",
+              "reps_cell": "C9"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D9",
+              "reps_cell": "E9"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F9",
+              "reps_cell": "G9"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H9",
+              "reps_cell": "I9"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Сгибание ног в тренажере",
+          "group": "legs",
+          "name_cell": "A10",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B10",
+              "reps_cell": "C10"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D10",
+              "reps_cell": "E10"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F10",
+              "reps_cell": "G10"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H10",
+              "reps_cell": "I10"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Икры",
+          "group": "legs",
+          "name_cell": "A11",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B11",
+              "reps_cell": "C11"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D11",
+              "reps_cell": "E11"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F11",
+              "reps_cell": "G11"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H11",
+              "reps_cell": "I11"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        }
+      ]
+    },
+    {
+      "name": "Тренировка 2",
+      "exercises": [
+        {
+          "name": "Жим гантелей лежа",
+          "group": "chest",
+          "name_cell": "A13",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": null,
+              "weight_cell": "B13",
+              "reps_cell": "C13"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D13",
+              "reps_cell": "E13"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F13",
+              "reps_cell": "G13"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H13",
+              "reps_cell": "I13"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Тяга в кроссовере на широчайшие",
+          "group": "back",
+          "name_cell": "A14",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B14",
+              "reps_cell": "C14"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D14",
+              "reps_cell": "E14"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F14",
+              "reps_cell": "G14"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H14",
+              "reps_cell": "I14"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Разведение в кроссовере на среднюю дельту",
+          "group": "shoulders",
+          "name_cell": "A15",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B15",
+              "reps_cell": "C15"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D15",
+              "reps_cell": "E15"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F15",
+              "reps_cell": "G15"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H15",
+              "reps_cell": "I15"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Тяга в кроссовере на заднюю дельту",
+          "group": "shoulders",
+          "name_cell": "A16",
+          "sets": [
+            {
+              "weight": 25.0,
+              "reps": 10,
+              "weight_cell": "B16",
+              "reps_cell": "C16"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D16",
+              "reps_cell": "E16"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F16",
+              "reps_cell": "G16"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H16",
+              "reps_cell": "I16"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Подъем на бицепс сидя на наклонной скамье",
+          "group": "arms",
+          "name_cell": "A17",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B17",
+              "reps_cell": "C17"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D17",
+              "reps_cell": "E17"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F17",
+              "reps_cell": "G17"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H17",
+              "reps_cell": "I17"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Брусья акцент на трицепс",
+          "group": "arms",
+          "name_cell": "A18",
+          "sets": [
+            {
+              "weight": null,
+              "reps": 10,
+              "weight_cell": "B18",
+              "reps_cell": "C18"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D18",
+              "reps_cell": "E18"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F18",
+              "reps_cell": "G18"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H18",
+              "reps_cell": "I18"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Болгарские выпады",
+          "group": "legs",
+          "name_cell": "A19",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B19",
+              "reps_cell": "C19"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D19",
+              "reps_cell": "E19"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F19",
+              "reps_cell": "G19"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H19",
+              "reps_cell": "I19"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        }
+      ]
+    },
+    {
+      "name": "Тренировка 3",
+      "exercises": [
+        {
+          "name": "Кроссовере на грудные (акцент на нижние)",
+          "group": "chest",
+          "name_cell": "A21",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B21",
+              "reps_cell": "C21"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D21",
+              "reps_cell": "E21"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F21",
+              "reps_cell": "G21"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H21",
+              "reps_cell": "I21"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Тяга нижнего блока",
+          "group": "back",
+          "name_cell": "A22",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B22",
+              "reps_cell": "C22"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D22",
+              "reps_cell": "E22"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F22",
+              "reps_cell": "G22"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H22",
+              "reps_cell": "I22"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Y тяга в кроссовере",
+          "group": "shoulders",
+          "name_cell": "A23",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B23",
+              "reps_cell": "C23"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D23",
+              "reps_cell": "E23"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F23",
+              "reps_cell": "G23"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H23",
+              "reps_cell": "I23"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Тяга гантелей на заднюю дельту",
+          "group": "shoulders",
+          "name_cell": "A24",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B24",
+              "reps_cell": "C24"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D24",
+              "reps_cell": "E24"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F24",
+              "reps_cell": "G24"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H24",
+              "reps_cell": "I24"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Молотки",
+          "group": "arms",
+          "name_cell": "A25",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B25",
+              "reps_cell": "C25"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D25",
+              "reps_cell": "E25"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F25",
+              "reps_cell": "G25"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H25",
+              "reps_cell": "I25"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Разгибание на трицепс в кроссовере",
+          "group": "arms",
+          "name_cell": "A26",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B26",
+              "reps_cell": "C26"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D26",
+              "reps_cell": "E26"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F26",
+              "reps_cell": "G26"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H26",
+              "reps_cell": "I26"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Разгибание ног в тренажере",
+          "group": "legs",
+          "name_cell": "A27",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B27",
+              "reps_cell": "C27"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D27",
+              "reps_cell": "E27"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F27",
+              "reps_cell": "G27"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H27",
+              "reps_cell": "I27"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        },
+        {
+          "name": "Икры",
+          "group": "legs",
+          "name_cell": "A28",
+          "sets": [
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "B28",
+              "reps_cell": "C28"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "D28",
+              "reps_cell": "E28"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "F28",
+              "reps_cell": "G28"
+            },
+            {
+              "weight": null,
+              "reps": null,
+              "weight_cell": "H28",
+              "reps_cell": "I28"
+            }
+          ],
+          "rest_seconds": 90,
+          "rep_min": 8,
+          "rep_max": 12,
+          "increment": 2.5,
+          "load_basis": "external",
+          "progression_enabled": false
+        }
+      ]
+    }
+  ]
+}
